@@ -1,6 +1,7 @@
 import React, { Component, useState } from "react";
-import { scryRenderedComponentsWithType } from "react-dom/test-utils";
- import "../App.css";
+import { scryRenderedComponentsWithType } from "react-dom/test-utils"; 
+import "../App.css";
+import Footer from './Footer';
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -51,6 +52,7 @@ const App = () => {
              <p>Each Person  : <span>{Eachperson}</span></p>
          </div>
       </div>
+   <Footer/>
    </div>
   )
   }
